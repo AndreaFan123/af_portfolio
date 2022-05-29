@@ -1,37 +1,24 @@
-import React, { useState } from "react";
-import { LinkWrapper, NavLinks, NavWrapper } from "./Navbar.styled";
-import { NavLink, useLocation, Link } from "react-router-dom";
+import React from "react";
+import { NavLinks, NavWrapper } from "./Navbar.styled";
 
 export default function Navbar() {
-  const { pathname } = useLocation();
   return (
     <NavWrapper>
-      <div>
-        {/* <img src="../assets/logo.png" /> */}
-        <p>Andrea</p>
-      </div>
+      <h1>Andrea Fan</h1>
       <NavLinks>
-        {LinkArray.map(({ label, to }) => (
-          <LinkWrapper key="label" to={to} isActive={pathname === to}>
-            <Link to={to}>{label}</Link>
-          </LinkWrapper>
-        ))}
+        <li>
+          <a href="#About">About</a>
+        </li>
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </NavLinks>
     </NavWrapper>
   );
 }
-
-export const LinkArray = [
-  {
-    label: "About",
-    to: "/",
-  },
-  {
-    label: "Projects",
-    to: "/projects",
-  },
-  {
-    label: "Contact",
-    to: `/contact`,
-  },
-];

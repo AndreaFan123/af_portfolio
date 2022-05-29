@@ -1,40 +1,38 @@
 import styled from "styled-components";
-import { COLORS } from "../../constants";
+import { VARS } from "../constants";
+import { Link } from "react-router-dom";
 
 export const NavWrapper = styled.nav`
-  width: 100%;
-  max-width: 1200px;
-  margin: 30px auto;
+  width: ${VARS.containerLg};
+  margin: 0 auto;
+  padding: 80px 0;
+  height: 100px;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  padding: 0 20px;
-  border-bottom: 3px solid #232946;
+  align-items: center;
 
-  div {
+  h1 {
     font-size: 2rem;
-    font-weight: 700;
-    color: #232946;
+    color: ${VARS.primaryFontDark};
   }
 `;
 
-export const NavLinks = styled.div`
+export const NavLinks = styled.ul`
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-`;
 
-export const LinkWrapper = styled.div`
-  background-color: ${({ isActive }) =>
-    !isActive ? `transparent` : "#232946"};
-  box-shadow: 5px -3px 0px rgb(200, 200, 200);
-  transition: all 0.3s ease;
-
+  li,
   a {
+    font-size: 1.3rem;
+    color: ${VARS.primaryFontDark};
     padding: 10px;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: ${({ isActive }) => (!isActive ? "#232946" : "#e78fb3")};
+
+    :active,
+    :focus,
+    :hover {
+      color: ${VARS.btnPinkBG};
+      background-color: ${VARS.btnDarkBG};
+      /* width: fit-content; */
+      transition: ${VARS.transitionEffect};
+    }
   }
 `;
