@@ -7,7 +7,7 @@ import {
   Navbar,
   About,
   Experience,
-  Portfolio,
+  Projects,
   Contact,
   Footer,
 } from "./components";
@@ -21,7 +21,7 @@ export default function App() {
       <Navbar />
       <Header />
       <Experience />
-      <Portfolio />
+      <Projects />
       <Contact />
       <Footer />
     </>

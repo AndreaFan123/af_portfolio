@@ -23,11 +23,12 @@ export const PortfolioTitles = styled.div`
   }
   p {
     font-size: 1.2rem;
+    color: ${VARS.secondaryFontMedium};
   }
 `;
 
 export const ShowcaseWrapper = styled.div`
-  border: 2px solid ${VARS.pinkBG};
+  border: 3px solid ${VARS.pinkBG};
   border-radius: 5px;
   overflow: hidden;
 
@@ -41,7 +42,8 @@ export const ShowcaseWrapper = styled.div`
 `;
 
 export const ShowcaseImg = styled.div`
-  width: 343px;
+  width: 100%;
+  overflow: hidden;
   /* height: 300px; */
 
   img {
@@ -56,5 +58,24 @@ export const ShowcaseTitles = styled.div`
   p {
     font-size: 1.5rem;
     font-weight: 800;
+  }
+
+  a {
+    display: block;
+    cursor: pointer;
+
+    :hover {
+      transition: all 0.4s ease-in-out;
+      font-weight: 500;
+      color: ${VARS.pinkBG};
+    }
+  }
+
+  span {
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+    padding: 5px;
+    border: 1px solid ${VARS.btnPinkBG};
+    border-radius: 5px;
   }
 `;

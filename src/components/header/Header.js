@@ -1,5 +1,8 @@
 import React from "react";
+
+// assets
 import selfie from "../../assets/selfie.jpeg";
+import resume from "../../assets/resume.pdf";
 
 //icon
 import { BsLinkedin, BsGithub } from "react-icons/bs";
@@ -15,7 +18,7 @@ import {
 
 export default function Header() {
   return (
-    <HeaderContainer>
+    <HeaderContainer id="about">
       <HeaderTitiles>
         <h4>Hello there,</h4>
         <h1>I'm Andrea Fan</h1>
@@ -25,7 +28,9 @@ export default function Header() {
           development, and I will keep learning it.{" "}
         </p>
         <HeaderCTA>
-          <a href="">Download CV</a>
+          <a href={resume} download="newfilename">
+            Download Resume
+          </a>
           <a href="">Let's Talk</a>
         </HeaderCTA>
       </HeaderTitiles>
@@ -34,10 +39,10 @@ export default function Header() {
         <img src={selfie} alt="Andrea Fan" />
       </HeaderImg>
       <HeaderSocial>
-        <a href="linkedin">
+        <a href="https://www.linkedin.com/in/andrea-fan-b98491b9/">
           <BsLinkedin />
         </a>
-        <a href="Github">
+        <a href="https://github.com/AndreaFan123">
           <BsGithub />
         </a>
       </HeaderSocial>

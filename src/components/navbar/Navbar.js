@@ -7,10 +7,10 @@ export default function Navbar() {
       <h1>Andrea Fan</h1>
       <NavLinks>
         <li>
-          <a href="#About">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
           <a href="#experience">Experience</a>
