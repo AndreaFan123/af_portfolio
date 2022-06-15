@@ -12,18 +12,26 @@ export const PortfolioShowcase = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+
+  @media screen and (max-width: 810px) {
+    grid-template-columns: none;
+  }
 `;
 
 export const PortfolioTitles = styled.div`
-  padding-bottom: 30px;
-  a {
-    font-size: 2rem;
+  /* padding-bottom: 30px; */
+  h3 {
+    font-size: 1.5rem;
     font-weight: 800;
     color: ${VARS.primaryFontLight};
   }
   p {
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: ${VARS.secondaryFontMedium};
+  }
+
+  @media screen and (max-width: 965px) {
+    text-align: center;
   }
 `;
 
@@ -31,6 +39,8 @@ export const ShowcaseWrapper = styled.div`
   border: 3px solid ${VARS.pinkBG};
   border-radius: 5px;
   overflow: hidden;
+  width: 370px;
+  height: 370px;
 
   a {
     color: ${VARS.secondaryFontMedium};
@@ -38,6 +48,11 @@ export const ShowcaseWrapper = styled.div`
     h5 {
       font-size: 1.5rem;
     }
+  }
+
+  @media screen and (max-width: 430px) {
+    width: 300px;
+    height: 350px;
   }
 `;
 
@@ -48,6 +63,7 @@ export const ShowcaseImg = styled.div`
 
   img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 `;
@@ -55,6 +71,7 @@ export const ShowcaseImg = styled.div`
 export const ShowcaseTitles = styled.div`
   padding: 15px;
   color: ${VARS.secondaryFontMedium};
+
   p {
     font-size: 1.5rem;
     font-weight: 800;
@@ -73,9 +90,16 @@ export const ShowcaseTitles = styled.div`
 
   span {
     display: inline-block;
+    background: rgb(184, 193, 236);
+    background: linear-gradient(
+      90deg,
+      rgba(184, 193, 236, 1) 0%,
+      rgba(221, 199, 227, 1) 27%,
+      rgba(255, 204, 219, 1) 100%
+    );
     margin: 10px 10px 10px 0;
     padding: 5px;
-    border: 1px solid ${VARS.btnPinkBG};
+    color: ${VARS.primaryFontDark};
     border-radius: 5px;
   }
 `;

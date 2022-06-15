@@ -27,7 +27,7 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${VARS.btnDarkBG};
     background-image: url(${BG});
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     color: ${VARS.primaryFontLight}
   }

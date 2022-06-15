@@ -13,10 +13,10 @@ export default function Contact() {
           <span>Name</span>
           <input type="text" />
         </label>
-        <lable>
+        <label>
           <span>Email</span>
           <input type="email" />
-        </lable>
+        </label>
 
         <label>
           <span>Message</span>

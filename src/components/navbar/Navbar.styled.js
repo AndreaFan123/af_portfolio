@@ -10,6 +10,7 @@ export const NavWrapper = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* background-color: ${VARS.btnPinkBG}; */
 
   h1 {
     font-size: 2rem;
@@ -35,4 +36,30 @@ export const NavLinks = styled.ul`
       transition: ${VARS.transitionEffect};
     }
   }
+
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
 `;
+
+export const MobileActive = styled.div`
+  display: none;
+
+  @media screen and (max-width: 750px) {
+    display: block;
+  }
+`;
+
+export const MobileIcon = styled.div`
+  z-index: 100;
+  position: absolute;
+  top: 69px;
+  right: 97px;
+  display: flex;
+  align-items: center;
+`;
+
+export const MenuIcons = {
+  color: `${VARS.primaryFontDark}`,
+  fontSize: "1.7rem",
+};

@@ -1,16 +1,15 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //component
 import {
   Header,
   Navbar,
-  About,
-  Experience,
   Projects,
   Contact,
   Footer,
+  Experience,
 } from "./components";
+
 //style
 import { GlobalStyles } from "./globalStyle/global.styled";
 

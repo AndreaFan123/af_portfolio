@@ -1,34 +1,71 @@
 import React from "react";
 
-//icons
+import coda from "../../assets/codapayments.png";
+import elex from "../../assets/elex.jpeg";
+import wg from "../../assets/wargaming.png";
 import {
-  SiStyledcomponents,
-  SiHtml5,
-  SiCss3,
-  SiFirebase,
-  SiJavascript,
-  SiReact,
-} from "react-icons/si";
-import { SkillWrapper } from "./Experience.styled";
+  CardsWrapper,
+  ExperienceCards,
+  ExperienceContainer,
+  ExperienceTitle,
+  ExperienceWrapper,
+  ExpImagWrapper,
+} from "./Experience.styled";
 
 export default function Experience() {
   return (
-    <SkillWrapper>
-      {SkillArray.map(({ label, icon }) => (
-        <>
-          <span>{icon}</span>
-          {/* <span>{label}</span> */}
-        </>
-      ))}
-    </SkillWrapper>
+    <ExperienceContainer id="experience">
+      <ExperienceWrapper>
+        <ExperienceTitle>
+          <h3>Experience</h3>
+          <p>Check out my resume for more details</p>
+        </ExperienceTitle>
+
+        {/* Grid */}
+        <ExperienceCards>
+          {/* Card 1 */}
+          <CardsWrapper>
+            <ExpImagWrapper>
+              <img src={coda} alt="codapayments" />
+            </ExpImagWrapper>
+            <div>
+              <h3>Codapayments</h3>
+              <span>Oct 2020 - Dec 2021</span>
+              <div>
+                <p>Senior Marketing TW/HK</p>
+              </div>
+            </div>
+          </CardsWrapper>
+
+          {/* Card 2 */}
+          <CardsWrapper>
+            <ExpImagWrapper>
+              <img src={elex} alt="elex" />
+            </ExpImagWrapper>
+            <div>
+              <h3>elex</h3>
+              <span>Oct 2020 - Sep 2021</span>
+              <div>
+                <p>Community Manager</p>
+              </div>
+            </div>
+          </CardsWrapper>
+
+          {/* Card 3 */}
+          <CardsWrapper>
+            <ExpImagWrapper>
+              <img src={wg} alt="wargaming" />
+            </ExpImagWrapper>
+            <div>
+              <h3>Wargaming.net</h3>
+              <span>Oct 2020 - Dec 2021</span>
+              <div>
+                <p>Sales Optimization TW/HK</p>
+              </div>
+            </div>
+          </CardsWrapper>
+        </ExperienceCards>
+      </ExperienceWrapper>
+    </ExperienceContainer>
   );
 }
-
-export const SkillArray = [
-  { label: "HTML5", icon: <SiHtml5 /> },
-  { label: "CSS3", icon: <SiCss3 /> },
-  { label: "JavaScript", icon: <SiJavascript /> },
-  { label: "React", icon: <SiReact /> },
-  { label: "Styled-components", icon: <SiStyledcomponents /> },
-  { label: "Firebase", icon: <SiFirebase /> },
-];
