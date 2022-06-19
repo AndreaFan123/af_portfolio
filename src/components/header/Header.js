@@ -23,7 +23,7 @@ export default function Header() {
         <h4>Hello there,</h4>
         <h1>I'm Andrea Fan</h1>
         <p>
-          I'm a experienced marketer from Taiwan 🇹🇼 , who is passionate about
+          I'm an experienced marketer from Taiwan 🇹🇼 , who is passionate about
           learning new techs. I love solving problems by trying to build tool
           that might be helpful for team.
         </p>
