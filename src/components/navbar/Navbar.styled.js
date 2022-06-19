@@ -54,7 +54,7 @@ export const MobileIcon = styled.div`
   z-index: 100;
   position: absolute;
   top: 69px;
-  right: 97px;
+  right: 45px;
   display: flex;
   align-items: center;
 `;

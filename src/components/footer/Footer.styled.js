@@ -39,7 +39,7 @@ export const FooterInfoLeft = styled.div`
   @media screen and (max-width: 745px) {
     span {
       position: absolute;
-      bottom: -155px;
+      bottom: -165px;
     }
   }
 
@@ -63,6 +63,7 @@ export const FooterInfoRight = styled.div`
 
 export const FooterNav = styled.div`
   display: flex;
+  gap: 5px;
   flex-direction: column;
   justify-content: space-between;
 

@@ -23,16 +23,15 @@ export default function Header() {
         <h4>Hello there,</h4>
         <h1>I'm Andrea Fan</h1>
         <p>
-          I'm a frontend marketer who is passionate about learning new techs,
-          for the lase couple of months, I have been learning frontend
-          development, my project is based on personal work experience that I
-          tryied to solve.
+          I'm a experienced marketer from Taiwan 🇹🇼 , who is passionate about
+          learning new techs. I love solving problems by trying to build tool
+          that might be helpful for team.
         </p>
         <HeaderCTA>
           <a href={resume} target="_blank">
             Open Resume
           </a>
-          <a href="#contact">Let's Talk</a>
+          {/* <a href="#contact">Let's Talk</a> */}
         </HeaderCTA>
       </HeaderTitiles>
 

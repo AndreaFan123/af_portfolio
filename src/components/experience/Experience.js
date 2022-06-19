@@ -44,7 +44,7 @@ export default function Experience() {
             </ExpImagWrapper>
             <div>
               <h3>elex</h3>
-              <span>Oct 2020 - Sep 2021</span>
+              <span>Jun 2019 - Sep 2020</span>
               <div>
                 <p>Community Manager</p>
               </div>
@@ -58,7 +58,7 @@ export default function Experience() {
             </ExpImagWrapper>
             <div>
               <h3>Wargaming.net</h3>
-              <span>Oct 2020 - Dec 2021</span>
+              <span> May 2018 - 2019 Feb</span>
               <div>
                 <p>Sales Optimization TW/HK</p>
               </div>

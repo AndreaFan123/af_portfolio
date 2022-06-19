@@ -5,7 +5,7 @@ import {
   Header,
   Navbar,
   Projects,
-  Contact,
+  // Contact,
   Footer,
   Experience,
 } from "./components";
@@ -21,7 +21,7 @@ export default function App() {
       <Header />
       <Experience />
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </>
   );

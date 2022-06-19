@@ -36,7 +36,7 @@ export const PortfolioTitles = styled.div`
 `;
 
 export const ShowcaseWrapper = styled.div`
-  border: 3px solid ${VARS.pinkBG};
+  border: 1px solid ${VARS.pinkBG};
   border-radius: 5px;
   overflow: hidden;
   width: 370px;
@@ -69,15 +69,21 @@ export const ShowcaseImg = styled.div`
 `;
 
 export const ShowcaseTitles = styled.div`
+  height: 160px;
   padding: 15px;
   color: ${VARS.secondaryFontMedium};
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
   p {
     font-size: 1.5rem;
     font-weight: 800;
+    padding-right: 20px;
   }
 
   a {
+    font-size: 1.5rem;
     display: block;
     cursor: pointer;
 
@@ -102,4 +108,9 @@ export const ShowcaseTitles = styled.div`
     color: ${VARS.primaryFontDark};
     border-radius: 5px;
   }
+`;
+
+export const ProjectGithub = styled.div`
+  display: flex;
+  align-items: center;
 `;

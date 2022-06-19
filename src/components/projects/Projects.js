@@ -6,7 +6,11 @@ import {
   ShowcaseImg,
   ShowcaseWrapper,
   ShowcaseTitles,
+  ProjectGithub,
 } from "./Projects.styled";
+
+import { BsGithub } from "react-icons/bs";
+
 import showcase_1 from "../../assets/showcase_1.jpeg";
 
 import Skill from "../skill/Skill";
@@ -27,8 +31,12 @@ export default function Portfolio() {
             </ShowcaseImg>
           </a>
           <ShowcaseTitles>
-            <p>Glance</p>
-            <a href="/glance-project-description">Project Description</a>
+            <ProjectGithub>
+              <p>Glance</p>
+              <a href="https://github.com/AndreaFan123/glance" target="_blank">
+                <BsGithub />
+              </a>
+            </ProjectGithub>
             <div>
               <span>React</span>
               <span>Styled-components</span>

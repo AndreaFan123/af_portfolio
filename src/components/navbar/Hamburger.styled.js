@@ -14,6 +14,7 @@ export const HamburgerMenu = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: flex-end;
   font-size: 2rem;
   font-weight: 700;
   height: fit-content;
@@ -22,8 +23,8 @@ export const HamburgerMenu = styled.ul`
   padding-top: 200px;
   padding-bottom: 90px;
   padding-right: 40px;
-
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in;
+  animation: mobileMenu 1s;
 
   a {
     color: ${VARS.primaryFontDark};
@@ -31,11 +32,15 @@ export const HamburgerMenu = styled.ul`
 
   @keyframes mobileMenu {
     0% {
-      transform: translateY(-100px);
+      top: -1000px;
+    }
+
+    50% {
+      top: -70px;
     }
 
     100% {
-      transform: translateY(0px);
+      top: -81px;
     }
   }
 `;
