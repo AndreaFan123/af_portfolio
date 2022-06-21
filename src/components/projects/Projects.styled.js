@@ -44,10 +44,6 @@ export const ShowcaseWrapper = styled.div`
 
   a {
     color: ${VARS.secondaryFontMedium};
-
-    h5 {
-      font-size: 1.5rem;
-    }
   }
 
   @media screen and (max-width: 430px) {
@@ -83,7 +79,7 @@ export const ShowcaseTitles = styled.div`
   }
 
   a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: block;
     cursor: pointer;
 
