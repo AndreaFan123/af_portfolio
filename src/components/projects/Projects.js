@@ -25,7 +25,7 @@ export default function Portfolio() {
       </PortfolioTitles>
       <Skill />
       <PortfolioShowcase>
-        <ShowcaseWrapper>
+        {/* <ShowcaseWrapper>
           <a href="https://easytodo-0508.web.app/login" target="_blank">
             <ShowcaseImg>
               <img src={showcase_2} alt="easyTodo, manage your daily tasks" />
@@ -48,7 +48,7 @@ export default function Portfolio() {
               <span>Firebase</span>
             </div>
           </ShowcaseTitles>
-        </ShowcaseWrapper>
+        </ShowcaseWrapper> */}
         <ShowcaseWrapper>
           <a
             href="https://glance-simple-work-space.web.app/login"
