@@ -2,7 +2,7 @@ import React from "react";
 
 // assets
 import selfie from "../../assets/selfie.jpeg";
-import resume from "../../assets/Andrea_resume.pdf";
+import resume from "../../assets/Resume_Andrea.pdf";
 
 //icon
 import { BsLinkedin, BsGithub } from "react-icons/bs";
