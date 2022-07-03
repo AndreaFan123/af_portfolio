@@ -24,7 +24,7 @@ export default function Header() {
         <h1>I'm Andrea Fan</h1>
         <p>
           I'm an experienced marketer from Taiwan 🇹🇼 , who is passionate about
-          learning new techs. I love solving problems by trying to build tool
+          learning new techs. I love solving problems by trying to build tools
           that might be helpful for team.
         </p>
         <HeaderCTA>
